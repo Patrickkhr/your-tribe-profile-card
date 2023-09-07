@@ -5,56 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDND Visitekaartje</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
     
     <article>
-
-      <div class="">
-        <img src="assets/profiel-foto.jpg" alt="">
+      <div class="foto"></div>
+      <div class="container">
+        <div id="element" class="info hidden">
+          <p class="info-tekst"><em>Creative Frontend Developer</em></p>
+          <h1 class="info-header">Patrick Hordijk</h1>
+          <p class="about-tekst">Hoi mijn naam is Patrick en ik design en bouw websites. Ik ben gespecialiseerd in <span class="bold">HTML</span>, <span class="bold">CSS</span> en <span class="bold">Javascript</span>. In mijn vrije tijd voetbal ik bij FC Delta Sports.</p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/patrick-hordijk-a639981b7/" target="_blank"><img class="icon1" src="assets/linkedin.svg"> </img> </a>
+            <a href="#website"><img class="icon2" src="assets/globe-solid.svg" target="_blank"></img></a>
+          </div>
+        </div>
+        <div class="card-below">
+          <p class="wave hover">👋</p>
+        </div>
       </div>
-
-      <header>
-        
-        <h1>Patrick Hordijk</h1>
-        
-        <p><em>Creatieve Frontend Developer</em></p>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-
-      <dl>
-        
-        <dt>HTML</dt>
-        <dd>🏆🏆🏆</dd>
-        
-        <dt>CSS</dt>
-        <dd>🏆🏆</dd>
-        
-        <dt>JavaScript</dt>
-        <dd>🏆🏆🏆🏆</dd>
-      </dl>
-  
-      <p>Lorem ipsum</p>
-      
     </article>
 
     <script src="scripts/script.js"></script>
