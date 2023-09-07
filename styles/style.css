@@ -199,9 +199,9 @@ body.expand img {
 .info {
   height: 0;
   opacity: 0;
-  transition: opacity 1s ease, height 1.5s ease;
   margin-left: 2em;
   margin-right: 2em;
+  transition: opacity 1s ease, height 1s ease;
 }
 
 .info-tekst {
@@ -220,12 +220,19 @@ body.expand img {
   margin-right: 2em;
   margin-bottom: 2em;
   width: 2em;
+  height: auto;
 }
 
 .icon2 {
   width: 2em;
+  height: auto;
 }
 
+.container:hover .info {
+  animation: none;
+  opacity: 1;
+  height: 100%;
+} 
 
 .container:hover .hover {
   background-color: black;
@@ -234,12 +241,6 @@ body.expand img {
   font-size: 2em;
   opacity: 0;
 }
-
-.container:hover .info {
-  opacity: 1;
-  height: 100%;
-  animation: none;
-} 
 
 @keyframes fadeIn {
   0% {
@@ -273,6 +274,17 @@ body.expand img {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
+}
+
+@media only screen and (max-width: 800px) {
+  .info {
+    height: 100%;
+    opacity: 1;
+  }
+  .foto {
+    padding: 0;
+  }
+
 }
 
 
